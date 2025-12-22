@@ -1,0 +1,60 @@
+{
+    "name": "@sanayasfp/carbon-js",
+    "version": "1.0.0",
+    "description": "A modern date/time library for JavaScript and TypeScript inspired by PHP Carbon",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+        "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "lint": "eslint src --ext .ts",
+        "prepublishOnly": "npm run build",
+        "format": "prettier --write \"src/**/*.ts\""
+    },
+    "keywords": [
+        "date",
+        "time",
+        "datetime",
+        "carbon",
+        "moment",
+        "dayjs",
+        "typescript"
+    ],
+    "author": "Sana YASFP <contact@sanayavo.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sanayasfp/carbon-js.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sanayasfp/carbon-js/issues"
+    },
+    "homepage": "https://github.com/sanayasfp/carbon-js#readme",
+    "devDependencies": {
+        "@types/jest": "^30.0.0",
+        "@types/node": "^25.0.3",
+        "@typescript-eslint/eslint-plugin": "^8.50.1",
+        "@typescript-eslint/parser": "^8.50.1",
+        "eslint": "^9.39.2",
+        "jest": "^30.2.0",
+        "prettier": "^3.7.4",
+        "ts-jest": "^29.4.6",
+        "tsup": "^8.5.1",
+        "typescript": "^5.9.3"
+    }
+}
