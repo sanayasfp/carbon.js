@@ -1,0 +1,16 @@
+src/
+tests/
+.github/
+.git/
+.gitignore
+tsconfig.json
+.eslintrc.js
+.prettierrc
+*.test.ts
+*.spec.ts
+node_modules/
+coverage/
+.nyc_output/
+.vscode/
+.idea/
+*.log
