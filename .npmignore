@@ -1,0 +1,28 @@
+# Source files
+src/
+tests/
+
+# Configuration files
+tsconfig.json
+jest.config.js
+
+# Git files
+.git
+.gitignore
+
+# Development files
+*.log
+npm-debug.log*
+.DS_Store
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp

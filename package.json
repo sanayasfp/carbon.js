@@ -1,0 +1,38 @@
+{
+  "name": "@sanayasfp/carbon.js",
+  "version": "1.0.0",
+  "description": "A simple Typescript/Javascript API extension for DateTime",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "carbon",
+    "date",
+    "time",
+    "datetime",
+    "timestamp",
+    "moment"
+  ],
+  "author": "Sana Yasfp",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanayasfp/carbon.js.git"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.6",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3"
+  }
+}
