@@ -79,8 +79,8 @@ export class Carbon {
    * Format the date
    * @param format - Format string (simplified version)
    */
-  format(format: string): string {
-    // Simple format implementation
+  format(_format?: string): string {
+    // Simple format implementation - format parameter reserved for future use
     return this.date.toLocaleDateString();
   }
 
