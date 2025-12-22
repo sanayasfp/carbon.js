@@ -115,12 +115,12 @@ export class Carbon {
     const seconds = String(this.date.getSeconds()).padStart(2, '0');
 
     return formatString
-      .replace('YYYY', String(year))
-      .replace('MM', month)
-      .replace('DD', day)
-      .replace('HH', hours)
-      .replace('mm', minutes)
-      .replace('ss', seconds);
+      .replace(/YYYY/g, String(year))
+      .replace(/MM/g, month)
+      .replace(/DD/g, day)
+      .replace(/HH/g, hours)
+      .replace(/mm/g, minutes)
+      .replace(/ss/g, seconds);
   }
 
   /**
