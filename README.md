@@ -4,18 +4,18 @@ A modern, lightweight date/time library for JavaScript and TypeScript, inspired 
 
 ## Installation
 ```bash
-npm install @sanayasfp/carbon.js
+npm install carbon.js
 # or
-yarn add @sanayasfp/carbon.js
+yarn add carbon.js
 # or
-pnpm add @sanayasfp/carbon.js
+pnpm add carbon.js
 ```
 
 ## Usage
 
 ### JavaScript/ES6
 ```javascript
-import Carbon from '@sanayasfp/carbon.js';
+import Carbon from 'carbon.js';
 
 const now = Carbon.now();
 const tomorrow = Carbon.tomorrow();
@@ -24,7 +24,7 @@ console.log(now.format('Y-m-d H:i:s'));
 
 ### CommonJS
 ```javascript
-const { Carbon } = require('@sanayasfp/carbon.js');
+const { Carbon } = require('carbon.js');
 
 const now = Carbon.now();
 console.log(now.diffForHumans());
@@ -32,7 +32,7 @@ console.log(now.diffForHumans());
 
 ### TypeScript
 ```typescript
-import Carbon from '@sanayasfp/carbon.js';
+import Carbon from 'carbon.js';
 
 const date: Carbon = Carbon.parse('2024-12-25');
 date.addDays(5);

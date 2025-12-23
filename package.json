@@ -1,5 +1,5 @@
 {
-    "name": "@sanayasfp/carbon.js",
+    "name": "carbon.js",
     "version": "1.0.0",
     "description": "A modern date/time library for JavaScript and TypeScript inspired by PHP Carbon",
     "main": "dist/index.js",
